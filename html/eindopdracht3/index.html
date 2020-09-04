@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht HTML</title>
+    <style>
+        body {
+            background-color: rgb(207, 232, 240);
+            text-align:center;
+
+        }
+        .flex {margin:0;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:center;
+                }
+
+        .flex>article
+                {width:30%;
+                margin:10px;
+                padding:20px;
+                background-color:white;
+                display:inline-block;
+                text-align:left;
+                }
+            
+        .flex>article img
+                {float:left;
+                margin-right:20px;
+        }
+    </style>
+</head>
+
+<body>
+     
+    <h1 style="color:Tomato;">Menu</h1>
+    <p>Unieke houtgeroosterde pizza's of laat je verleiden tot onze pasta's, antipasta's, 
+        focaccia's, salades en bruschetta's.<br>Relex in een vriendelijke ambiance,
+        terwijl je geniet van de hout aroma's welke uit de ovens komen, of ga buiten zitten 
+        en drink de Mildura sunshine. 
+    </p>
+    
+
+    <div class="flex">
+        <article>
+            <img src="/img/pizzaoriginal.png" alt="Pizza Original" height="150" />
+            <h3>Original</h3>
+            <p>Tomatensauce, mozzerella en oregano.</p>
+            <p style="color:Tomato;">$ 18,00</p>
+            <button type="button">ADD TO CART</button>
+        </article>
+        <article>
+            <img src="/img/pizzasalami.png" alt="Pizza Salami" height="150" />
+            <h3>Salami</h3>
+            <p>Tomatensauce, mozzerella en milde salami.</p>
+            <p style="color:Tomato;">$ 15,00</p>
+            <button type="button">ADD TO CART</button>
+        </article>
+        <article>
+            <img src="/img/pizzachick.png" alt="Pizza Chicken" height="150" />
+            <h3>Chicken</h3>
+            <p>Tomatensauce, mozzerella, chicken en bbqsauce.</p>
+            <p style="color:Tomato;">$ 25,00</p>
+            <button type="button">ADD TO CART</button>
+        </article>
+        <article>
+            <img src="/img/pizzahawaii.png" alt="Pizza Hawaii" height="150" />
+            <h3>Hawaii</h3>
+            <p>Tomatensauce, mozzerella,ham en annanas.</p>
+            <p style="color:Tomato;">$ 16,00</p>
+            <button type="button">ADD TO CART</button>
+        </article>
+    </div>
+</body>
+
+</html>
