@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Elementen 09032020</title>
+    <style>
+        body > footer
+        {
+            margin: 200px 0 100px 0;
+        }
+        #fixedmenu
+        {
+            position:fixed;
+            top:0px;
+            right:0px;
+            background-color:white;
+        }
+
+        #fixedmenu nav
+        {
+            padding:20px;
+        }
+
+        #navigationcontent
+        {
+            width:50%;
+            line-height:120%;
+        }
+        
+    </style>
 </head>
-
-<header>
-    <img src="https://www.w3schools.com/images/picture.jpg" alt="image with absolute path" height="150">
-</header>
-
 <body>
+    <header>
+        <img src="https://www.w3schools.com/images/picture.jpg" alt="image with absolute path" height="150">
+    </header>
     <section>
         <h2>HTML Element answers.</h2>
         <ol>
@@ -83,28 +106,65 @@
                     <li>item 3</li>
                 </ul>
                     <p></p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                        </ul>
+                    <li>item 3</li>
+                </ul>  
+                <p></p> 
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                        <ol>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                        </ol>
+                    <li>item 3</li>
+                </ul> 
+            </li>
+            <li id="fixedmenu">
+                <nav>
                     <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                            <ul>
-                                <li>item 1</li>
-                                <li>item 2</li>
-                            </ul>
-                        <li>item 3</li>
-                    </ul>  
-                    <p></p> 
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                            <ol>
-                                <li>item 1</li>
-                                <li>item 2</li>
-                            </ol>
-                        <li>item 3</li>
-                    </ul>    
+                        <li><a href="#tigers">Tigers</a></li>
+                        <li><a href="#lions">Lions</a></li>
+                        <li><a href="#monkeys">Monkeys</a></li>
+                        <li><a href="#hippopotamus">Hippopotamus</a></li>
+                    </ul>
+                </nav>
+            </li>
+        </ol>
+        <ol start="10">  
+            <li><em>(See navigation top-right of page)</em></li>  
+            <li id="navigationcontent">
+                <section>
+                    <article id="tigers">
+                        <header><h1>Tigers</h1></header>
+                        <p>Lorem ipsum dolor sit amet, sit in dolor alterum facilisi, id facilis deseruisse usu. An postea aliquando sadipscing mea, per dolores voluptua conceptam in. Mei aeque invenire sadipscing et, ius id movet mediocrem liberavisse. Eu vero adolescens usu, ei quo solet deterruisset.</p>
+                        <p>Ea ius doctus democritum, vidisse alienum qui at. Et harum iudicabit eum, ridens periculis iracundia cum at. Ipsum insolens recteque vim cu, no vis noster verterem. Eum sonet iudicabit in, solum intellegam eos at, veri iracundia est ne. Viris assentior honestatis qui te. Ad legendos voluptatum cum, lorem persequeris ex sit, vocibus laboramus pri an.</p>
+                    </article>
+                    <article id="lions">
+                        <header><h1>Lions</h1></header>
+                        <p>Lorem ipsum dolor sit amet, sit in dolor alterum facilisi, id facilis deseruisse usu. An postea aliquando sadipscing mea, per dolores voluptua conceptam in. Mei aeque invenire sadipscing et, ius id movet mediocrem liberavisse. Eu vero adolescens usu, ei quo solet deterruisset.</p>
+                        <p>Ea ius doctus democritum, vidisse alienum qui at. Et harum iudicabit eum, ridens periculis iracundia cum at. Ipsum insolens recteque vim cu, no vis noster verterem. Eum sonet iudicabit in, solum intellegam eos at, veri iracundia est ne. Viris assentior honestatis qui te. Ad legendos voluptatum cum, lorem persequeris ex sit, vocibus laboramus pri an.</p>
+                    </article>
+                    <article id="monkeys">
+                        <header><h1>Monkeys</h1></header>
+                        <p>Lorem ipsum dolor sit amet, sit in dolor alterum facilisi, id facilis deseruisse usu. An postea aliquando sadipscing mea, per dolores voluptua conceptam in. Mei aeque invenire sadipscing et, ius id movet mediocrem liberavisse. Eu vero adolescens usu, ei quo solet deterruisset.</p>
+                        <p>Ea ius doctus democritum, vidisse alienum qui at. Et harum iudicabit eum, ridens periculis iracundia cum at. Ipsum insolens recteque vim cu, no vis noster verterem. Eum sonet iudicabit in, solum intellegam eos at, veri iracundia est ne. Viris assentior honestatis qui te. Ad legendos voluptatum cum, lorem persequeris ex sit, vocibus laboramus pri an.</p>
+                    </article>
+                    <article id="hippopotamus">
+                        <header><h1>Hippopotamus</h1></header>
+                        <p>Lorem ipsum dolor sit amet, sit in dolor alterum facilisi, id facilis deseruisse usu. An postea aliquando sadipscing mea, per dolores voluptua conceptam in. Mei aeque invenire sadipscing et, ius id movet mediocrem liberavisse. Eu vero adolescens usu, ei quo solet deterruisset.</p>
+                        <p>Ea ius doctus democritum, vidisse alienum qui at. Et harum iudicabit eum, ridens periculis iracundia cum at. Ipsum insolens recteque vim cu, no vis noster verterem. Eum sonet iudicabit in, solum intellegam eos at, veri iracundia est ne. Viris assentior honestatis qui te. Ad legendos voluptatum cum, lorem persequeris ex sit, vocibus laboramus pri an.</p>
+                    </article>
+                </section>
             </li>
         </ol>
     </section>
+    <footer><img src="/img/frontendspectrum.jpeg" alt="image with relative path style=" height="150"></footer>
 </body>
-<footer><img src="/img/frontendspectrum.jpeg" alt="image with relative path style=" height="150"></footer>
 </html>
