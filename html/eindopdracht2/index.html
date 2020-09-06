@@ -1,73 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eindopdracht2 HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="../../css/mainnav.css" rel="stylesheet">
     <style>
+    	
+    	*
+    	{
+    		box-sizing: border-box;
+    	}
+    	
         body {
             background-color: none;
+            font-family: 'Open Sans', sans-serif;
+            font-weight:400;
         }
-
+        
+        h4
+        {
+        	background-color:rgb(112, 193, 223);
+        	margin:0;
+        	color:white;
+        	font-weight: normal;
+        	padding:5px;
+        }
+        
         .flex {
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
+            margin:0;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:center;
         }
 
-        .flex>article {
-            width: 20%;
-            margin: 10px;
-            padding: 20px;
-            background-color: rgb(235, 233, 219);
-            display: inline-block;
-            text-align: center;
-        }
+        .flex > section,
+        .flex > section > article
+		{
+			margin: 10px;
+			padding:0;
+			background-color:rgba(235, 233, 219,0.4);
+			border-radius: 10px;
+			overflow:hidden;
+			text-align:left;
+		}
+		
+		.flex > section
+		{
+			width:30%;
+			min-width:250px;
+			max-width:420px;
+			text-align:center;
+		}
 
-        .flex>article img {
-            float: center;
-            margin-right: 20px;
+        .flex > section header
+		{
+			display:block;
+			position:relative;
+			background-image: url('../../img/code.jpeg');
+			background-size:cover;
+			margin-bottom:20%;
+			border-bottom: 4px rgb(112, 193, 223) solid;
+			padding-top:35%;
+		}
+        
+        .flex > section header img
+        {
+        	border:4px rgb(112, 193, 223) solid;
+			width:50%;
+			position:absolute;
+			bottom:0px;
+			left:50%;
+			margin-left:-25%;
+			margin-bottom:-25%;
+			border-radius: 50%;
+			background-size:cover;
         }
+        
+        .flex > section footer img
+        {
+        	margin-top:5%;
+        	width:100%;
+        	float:left;
+        }
+     
+        .content
+        {
+        	width:60%;
+        	margin:0 auto;
+        	padding:5% 0;
+        }
+        
+        .content h3,
+        .content p
+        {
+        	margin:0;
+        	font-weight:600;
+        }
+        
+        .content p
+        {
+        	font-size:80%;
+        	line-height:160%;
+        	font-weight:400;
+        }
+        
+        .content p a
+        {
+        	text-decoration:none;
+        	color:rgb(44, 104, 157);
+        }
+        
+        ul.social,
+        ul.social li
+        {
+        	margin:0;
+        	padding:0;
+        	list-style-type: none;
+        	
+        	display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+            align-items: center;
+            
+            font-size:15px;
+            line-height:15px;
+            height:30px;
+        }
+        
+        ul.social li
+        {
+        	justify-content:center;
+			flex-grow:1;
+			flex-shrink:1;
+			width:33.3%;
+        }
+        
+        ul.social li svg,
+        ul.social li img
+        {
+        	height:15px;
+        	margin-right:10%;
+        }
+            
+        img.flipvert
+        {
+        	transform:scale(1,-1);
+        }
+        
+        .flex > section.right
+		{
+			width:60%;
+			background-color:transparent;
+			max-width:820px;
+			margin: 0;
+			
+			display:flex;
+			flex-direction:column;
+            flex-wrap:nowrap;
+            justify-content:space-between;
+		}
+		   
+        section > article ul,
+       	section > article li,
+       	section > article strong
+        {
+        	padding:0;
+        	margin:0;
+        	list-style-type: none;
+        	font-weight:400;
+        }
+        
+        section > article strong
+        {
+        	padding-right:10px;
+        }
+        
+        section > article p,
+        section > article ul
+        {
+        	margin: 10px 5px;
+        }
+        
+        .underlined > span
+        {
+        	border-width: 0 0 2px 0;
+        	border-color: rgb(44, 104, 157);
+        	border-style: solid;
+        	margin:5px 10px 1px 0;
+        	display:inline-block;
+        	padding-right:30px;
+        }
+        .underlined > span.trail-long
+        {
+        	padding-right:120px;
+        }
+        .underlined > span.trail-small
+        {
+        	padding-right:5px;
+        }
+        
+        .rating li
+        {
+        	display:flex;
+        	flex-direction: row;
+        	flex-wrap: nowrap;
+        	justify-content: flex-start;
+        	align-items: center;
+        }
+        
+        .rating li strong
+        {
+        	width: 40%;
+        }
+        
+        .rating li span
+        {
+        	margin:2px;
+        	display:inline-block;
+        	height:25px;
+        	width:25px;
+        	background-color: rgb(251,220,86);
+        	-webkit-mask-image:  url('../../img/star.svg');
+        	mask-image: url('../../img/star.svg');
+        	mask-size: contain;
+        }
+        
+        .rating li.four span:nth-of-type(n+5)
+        {
+        	background-color: rgba(0,0,0,0.2);
+        }
+        
+        .rating li.one span:nth-of-type(n+2)
+        {
+        	background-color: rgba(0,0,0,0.2);
+        }
+        
+        .rating li.zero span
+        {
+        	background-color: rgba(0,0,0,0.2);
+        }
+        
     </style>
-
-
 <body>
+	<nav id="mainnav">
+		<ul>
+			<li><a href="../intro/">Intro</a></li>
+			<li><a href="../html_elementen/">HTML Elementen</a></li>
+			<li><a href="../forms_tabellen/">Forms & Tabellen</a></li>
+			<li><a href="../eindopdracht/">Eindopdracht</a></li>
+			<li><a href="../eindopdracht2/">Eindopdracht 2</a></li>
+			<li><a href="../eindopdracht3/">Eindopdracht 3</a></li>
+		</ul>
+	</nav>
     <div class="flex">
-        <article>
-            <header><img src="/img/codefoto.png" alt="Code Foto" height="150"></header>
-                <h3>Kim Sing</h3>
-                <p style="color:lightblue;">@chengks</p>
-                <p style="color:lightblue;">Being open minded of other solutions, gains better results than using the
-                    first encountered solution.</p>
-                <button type="button">+1000</button><button>+999</button><button>0</button>
-                <img src="/img/coronastaafdiagram.png" alt="Corona Staafdiagram" height="150">
-        </article>
-
-        <article>
-            <h3 style="background-color:rgb(112, 193, 223);">Personal information</h3>
-                
-                <p>Name: Kim Sing Surname: Cheng</p>
-                <p>Age: 40 Sex: M Date of birth:01-01-1980</p>
-                <p>Address: osdorpplein 16 Postal code:1234AB</p>
-                <p>City: Asterdam Country: NL Proffession:Full stack developer</p>
-                <p>Hobbey: Table tennis</p>
-
-            <h3 style="background-color:rgb(112, 193, 223);">Languages</h3>
-                
-                <p>HTML: *****</p>
-                <p>CSS: *****</p>
-                <p>JS: *****</p>
-                <p>Java: *****</p>
-                <p>Kotlin: ***</p>
-                <p>Groovy: ***</p>
-
-            <h3 style="background-color:rgb(112, 193, 223);">Frameworks en tools</h3>
-
-        </article>
-
+    
+        <section>
+            <header>
+            	<img src="../../img/san-diego-baby-portrait-photography-bw.jpeg" alt="Kim Sing">
+            </header>
+            <div class="content">
+				<h3>Mandy Tentij</h3>
+				<p><a href="mailto:mcyogaplan@hotmail.com">@mandy</a><br>"Being open minded of other solutions, gains better results than using the first encountered solution."</p>
+            </div>
+			<ul class="social">
+            	<li>
+					<img src="../../img/thumbsup.svg" alt="liked">
+					<span>+1000</span>
+      			</li>
+      			<li>
+					<img src="../../img/hart.svg" alt="loved">
+					<span>+999</span>
+				</li>
+      			<li>
+					<img src="../../img/thumbsup.svg" class="flipvert" alt="unliked">
+      				<span>0</span>
+      			</li>
+            </ul>
+            <footer>
+            	<img src="../../img/coronastaafdiagram.png" alt="Covid">
+            </footer>
+        </section>
+            
+        <section class="right">
+        	
+        	<article>
+            	<h4>Personal information</h4>
+            	<p class="underlined">
+            		<span class="trail-long"><strong>Name:</strong> Mandy</span>
+            		<span class="trail-long"><strong>Surname:</strong> Tentij</span><br>
+            		<span><strong>Age:</strong> 40</span>
+            		<span class="trail-small"><strong>Sex:</strong> F</span>
+            		<span><strong>Date of birth:</strong> 01-01-1989</span><br>
+            		<span><strong>Address:</strong> Straatnaam 123</span>
+            		<span><strong>Postal code:</strong> 1234AB</span><br>
+            		<span><strong>City:</strong> Aalsmeer</span>
+            		<span><strong>Country:</strong> NL</span>
+            		<span><strong>Profession:</strong> Full Stack Developer</span><br>
+            		<span class="trail-long"><strong>Hobby:</strong> Coding</span>
+            	</p>
+            </article>
+            
+            <article>
+            	<h4>Languages</h4>
+            	<ul class="rating">
+            		<li>
+            			<strong>HTML:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li class="four">
+            			<strong>CSS:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li class="one">
+            			<strong>Javascript:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li class="zero">
+            			<strong>JAVA:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li>
+            			<strong>Soft-skills:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li>
+            			<strong>Resource management</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            	</ul>
+            </article>
+            <article>
+            	<h4>Frameworks & tools</h4>
+            	<ul class="rating">
+            		<li class="one">
+            			<strong>Bootstrap:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li class="zero">
+            			<strong>jQuery:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            		<li class="zero">
+            			<strong>Laravel:</strong>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            			<span></span>
+            		</li>
+            	<ul>
+            </article>
+            
+        </section>  
+        
+    </div>
 </body>
-
 </html>
