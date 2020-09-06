@@ -3,16 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms en Tabellen 09062020</title>
 </head>
 <body>
-    <ol start="9">
-        <li>
-            <quote>Sinds de komst van HTML5 zijn erelementendiebetekenissenhebben.Wat wordt er bedoeld met HTML semantics? Waarom is het gebruik van semantics belangrijk?
-                Lees meer over semantics markup</quote>
-        </li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
+    <section>
+        <ol start="1">
+            <li>
+                <form  action="/" method="POST">
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="lastname" placeholder="achternaam" value="">
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="name" placeholder="voornaam" value="">
+                </form>
+            </li>
+            <li>
+                <h3>Radio Button</h3>
+                <form action="/" method="POST">
+                    <label for="radiobutton">Radiobutton</label>
+                    <input type="radio" id="radiobutton" name="radiobutton" value="radiobutton"><br>
+                </form>
+                
+                <h3>Checkboxes</h3>
+                <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+                <form action="/" method="POST">
+                    <label for="check"> This is a checkbox</label>
+                    <input type="checkbox" id="check" name="check" value="check"><br>
+                </form> 
+                
+                <h3>Password</h3>
+                <form action="/" method="POST">
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" minlength="8"><br>
+                </form>
+
+                <h3>Reset</h3>
+                <p> Click on the reset button to reset the form.</p>
+                <form action="/">
+                    <label for="pin">Enter a PIN:</label>
+                    <input type="text" id="pin" name="pin" maxlength="4"><br> 
+                    <input type="reset" value="Reset">
+                </form>
+
+                <h3>Submit Button</h3>
+                <p>If you click the "Submit" button, the form-data will be sent to a page called "/".</p>
+                <form action="/">
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <input type="submit" value="Submit">
+                </form> 
+
+                <form action="/"></form>
+            </li>
+        </ol>
+    </section>
 </body>
 </html>
