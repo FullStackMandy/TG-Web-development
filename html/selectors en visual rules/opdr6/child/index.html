@@ -4,18 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors en visual rules opdracht 6</title>
+    <title>Selectors en visual rules opdracht 6 child</title>
+    <style>
+        div > p {
+          background-color: yellow;
+        }
+        </style>
 </head>
 
 <body>
-    <h1>Selectors en visual rules opdracht 6</h1>
-    <h2>Opdracht 6</h2>
-    <p>Click op de onderstaande linkjes.</p>
-    <ul>
-        <li><a href="/child/">Child</a></li>
-        <li><a href="/adjacent/">Adjacent</a></li>
-        <li><a href="/general/">General</a></li>
-    </ul>
+    <h1>Selectors en visual rules</h1>
+    <h2>Opdracht 6 child</h2>
+    <p>Hieronder vindt je een voorbeeld van een child selector.</p>
+
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+        <p>Paragraph 4 in the div.</p>
+    </div>
+      
+      <p>Paragraph 5. Not in a div.</p>
+      <p>Paragraph 6. Not in a div.</p>
+      
+      
+    
 </body>
 
 </html>
