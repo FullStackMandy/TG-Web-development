@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Selectors en visual rules 8</title>
+    <style>
+        
+        body 
+        {
+            font-weight: normal;
+            color:purple;
+        }
+        
+        h1 {
+            color: blue;
+            border: 1px green solid;
+            text-align:center;
+        }
+
+        span {
+            color: black;
+        }
+
+        span h1 {
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <ul>
-        <li><a href="./intro/">Intro</a></li>
-        <li><a href="./html_elementen/">HTML Elementen</a></li>
-        <li><a href="./forms_tabellen/">Forms & Tabellen</a></li>
-        <li><a href="./eindopdracht/">Eindopdracht</a></li>
-        <li><a href="./eindopdracht2/">Eindopdracht 2</a></li>
-        <li><a href="./eindopdracht3/">Eindopdracht 3</a></li>
-    </ul>
+    <h1>Selectors en visuals.</h1>
+    <h2>Opdracht 8.</h2>
+    <p>De paarse "body" style kleur cascade door alle dieper liggende elementen.</p>
+    <p>"H1" inherit niet de font-weight van "body"</p>
+    
+    <p>The cascade can be applied to the same element,for instance &lt;h1&gt;,
+        but the last in row will overrule the first. Check the code for an example.</p>
+    <p>All children inherit the adjusted style wich is applied to that element,
+        if you want to tackel that you can exclude texst from beeing inherited
+        style by their parents onto their children with the use of a &lt;span&gt; tag.
+        <span> Check the code for an example.</span>
+    </p>
+
+    <span>
+        <h1>H1 in a section</h1>
+        <p>Deze H1 inherit de groene border van de "H1" style maar heeft een eigen kleur</p>
+    </span>
+
 </body>
+
 </html>

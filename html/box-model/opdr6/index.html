@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model 6</title>
+    <style>
+        
+        .box
+        {
+            background-color: lightpink;
+            display:inline-block;
+        } 
+
+        .container {
+            display:block;
+            padding: 20px;
+            margin:20px;
+            background-color: bisque;
+            border: 1px solid black;
+            width: 8%;
+        }
+
+        span {
+            background-color: cornflowerblue;
+            display:inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Box-model</h1>
+    <h2>Opdracht 6</h2>
+    <p>Als je ruimte wil maken tussen de border en de buitenrand, verander je de margin.
+    </p>
+    <div class="box">
+        <div class="container"><span>Some content here in an inline-block span inside a block box with a border</span></div>
+    </div>
+</body>
+
+</html>

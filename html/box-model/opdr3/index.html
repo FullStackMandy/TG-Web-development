@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model 3</title>
+    <style>
+        p {
+            background-color: lightgreen;
+            margin:0;
+        }
+
+        p:nth-of-type(2)
+        {
+            padding-bottom:15px;
+        }
+        
+        span {
+            border:1px black solid;
+            background-color:blanchedalmond;
+
+            width:300px;
+            height:300px;
+        }
+
+        p > span {
+            background-color: green;
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Box-model</h1>
+    <h2>Opdracht 3</h2>
+    <p>It depends on the span. Height and width doesn't apply on inline boxes (the light colored ones). so nothing happens with them. The spans that are styled as block are changing shape<br><br></p>
+    
+    <p>
+        <span>Dit is een block-box en neemt de hele breedte in waardoor de volgende box op de volgende regel zit.</span>
+    </p>
+    <p>
+        <span>In dit block zit <span>inline tekst</span> in wat dus niet op de volgende regel hoort te
+        <span>staan</span></span>
+    </p>
+
+</body>
+</html>

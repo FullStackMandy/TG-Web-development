@@ -4,19 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors en visual rules opdracht 4</title>
+    <title>Selectors en visual rules 4</title>
     <style>
-        * {
+        div {
             color: green;
         }
 
-        p {
-            color: blue;
+        p:first-of-type {
+            color: black;
+        }
+
+        p > div {
+            color: darkblue;
         }
     </style>
 </head>
 
 <body>
+    <h1>Selectors & visual rules</h1>
+    <h2>Opdracht 4</h2>
+    <p>Voorbeeld nagemaakt:</p>
     <div>
         <h2>Title</h2>
         <p>paragraph tekst</p>
