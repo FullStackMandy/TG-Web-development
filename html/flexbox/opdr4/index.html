@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 4</title>
+    <style>
+        .flexbox-container {
+            display: flex;
+            background-color: rgb(240, 240, 183);
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+
+        .flexbox-item {
+
+            background-color: rgb(164, 240, 164);
+            margin: 20px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .flexbox-containertwo {
+            display: flex;
+            background-color: rgb(240, 240, 183);
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+        .flexbox-item {
+
+            background-color: rgb(164, 240, 164);
+            margin: 20px;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .flexbox-containerthree {
+            display: flex;
+            background-color: rgb(240, 240, 183);
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+        .flexbox-item {
+
+            background-color: rgb(164, 240, 164);
+            margin: 20px;
+            padding: 50px;
+            text-align: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <h2>Opdracht 4</h2>
+
+    <p>In the first assignment you can see that the content is from left to right bij default, justify content equals
+        flex-start. In the second assignment you can see all items are aligned from right to left, justify content
+        equals flex-end. In this example you can see that the items are aligned in the center, which means the justify
+        content property equals center. Below this example you will find justify content equals space between and the
+        last one show's justify content space around.
+    </p>
+
+    <p>Justify content, center.</p>
+
+    <div class="flexbox-container">
+        <div class="flexbox-item">1</div>
+        <div class="flexbox-item">2</div>
+        <div class="flexbox-item">3</div>
+        <div class="flexbox-item">4</div>
+        <div class="flexbox-item">5</div>
+        <div class="flexbox-item">6</div>
+    </div>
+
+    <p>Justify content, space between.</p>
+
+    <div class="flexbox-containertwo">
+        <div class="flexbox-item">1</div>
+        <div class="flexbox-item">2</div>
+        <div class="flexbox-item">3</div>
+        <div class="flexbox-item">4</div>
+        <div class="flexbox-item">5</div>
+        <div class="flexbox-item">6</div>
+    </div>
+
+    <p>Justify content, space around.</p>
+
+    <div class="flexbox-containerthree">
+        <div class="flexbox-item">1</div>
+        <div class="flexbox-item">2</div>
+        <div class="flexbox-item">3</div>
+        <div class="flexbox-item">4</div>
+        <div class="flexbox-item">5</div>
+        <div class="flexbox-item">6</div>
+    </div>
+
+</body>
+
+</html>

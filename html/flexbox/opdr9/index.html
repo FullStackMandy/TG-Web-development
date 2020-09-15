@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3Ddevice-width, initial-scale=3D1.0">
+    <title>Flexbox 9</title>
+    <style>
+        section {
+            background-color: slategrey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding:20px;
+            justify-content:space-between;
+        }
+        
+        article {
+            width:20%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            padding: 0px;
+            background-color: white;
+            text-align: center;
+            
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        h3{
+        	color: blueviolet;
+        }        
+
+        p
+        {
+        	padding:0 10px;
+        }
+        
+        .button {
+        	cursor:pointer;
+            background-color: blueviolet;
+            color: cornsilk;
+            width: 100%;
+            padding:20px 0;
+            display:block;
+        }
+        .button:hover
+        {
+        	transform: rotate(180deg);
+        	background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <h2>Opdracht 9</h2>
+    <p>This is the result to the answer of assignment 9.</p>
+
+    <section>
+        <article>
+        	<header>
+        		<img src="/img/klaproos.png" alt="Klaproos">
+				<h3>Klaproos</h3>
+            </header>
+            <p>Als je op de button hieronder drukt volgt er een stukje gesproken tekst over de klaproos. En als je even over de button heen beweegt, gebeurt er wat.</p>
+            <div class="button">Play Klaproos</div>
+        </article>
+        <article>
+        	<header>
+        		<img src="/img/alstroemeria.png" alt="Alstroemeria">
+            	<h3>Alstroemeria</h3>
+            </header>
+            <p>Als je op de button hieronder drukt volgt er een stukje gesproken tekst over de alstroemeria. En als je even over de button heen beweegt, gebeurt er wat. </p>
+            <div class="button">Play Alstroemeria</div>
+        </article>
+        <article>
+        	<header>
+        		<img src="/img/zonnebloem.png" alt="Zonnebloem">
+            	<h3>Zonnebloem</h3>
+            </header>
+            <p>Als je op de button hieronder drukt volgt er een stukje gesproken tekst over de zonnebloem. En als je even over de button heen beweegt, gebeurt er wat. </p>
+            <div class="button">Play Zonnebloem</div>
+        </article>
+        <article>
+        	<header>
+        		<img src="/img/korenbloem.png" alt="Korenbloem">
+            	<h3>Korenbloem</h3>
+            </header>
+            <p>Als je op de button hieronder drukt volgt er een stukje gesproken tekst over de korenbloem. En als je even over de button heen beweegt, gebeurt er wat.</p>
+            <div class="button">Play Korenbloem</div>
+        </article>
+    </section>
+
+</body>
+
+</html>
