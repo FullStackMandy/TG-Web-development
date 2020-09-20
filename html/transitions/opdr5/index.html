@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		
+		/* buitenste blok */
+		div.holder
+		{
+			width:550px;
+			height:350px;
+			border:1px black solid;
+		}
+		
+		div.hok
+		{
+			background:url('http://www.animalslook.com/media/these-animals-just-love-to-make-silly-faces-15-pictures/these-animals-just-love-to-make-silly-faces-15-pictures-1.jpg');
+			background-size: cover;
+			width:200px;
+			height:200px;
+			border:10px black solid;
+			position:relative;
+		}
+		
+		div.hok > div.deksel
+		{
+			width:200px;
+			height:200px;
+			position:absolute;
+			left:0px;
+			bottom:0px;
+			background-color:blue;
+			
+			transition-duration: 0.4s;
+			transition-timing-function: ease-out;
+			transition-property: left bottom transform;
+		}
+		
+		/* hover */
+		div.hok:hover > div.deksel
+		{
+			transform:rotate(30deg);
+			left:100px;
+			bottom:-100px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="holder">
+		<div class="hok">
+			<div class="deksel"></div>
+		</div>
+	</div>
+</body>
+</html>

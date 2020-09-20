@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+		/* ALLE divs */
+		div
+		{
+			background-color: lightgrey;
+			border: 1px black solid;
+		}
+		
+		/* 
+			alle blokjes 
+			voor allemaal de background-color border-radius margin-left properties animeren
+			ze zijn allemaal even snel aan de overkant dus duration is hetzelfde
+		*/
+		div.holder > div
+		{
+			width:50px;
+			height:50px;
+			line-height: 50px;
+			margin:4px;
+			text-align:center;
+			
+			transition-duration: 3s;
+			transition-property: background-color border-radius margin-left;
+		}
+		
+		/* buitenste blok */
+		div.holder
+		{
+			width:800px;
+		}
+		
+		/* 
+			alle blokjes bij hover over buitenste 
+			ze worden allemaal rood
+			ze gaan allemaal naar rechts (margin-right)
+		*/
+		div.holder:hover > div
+		{
+			background-color: red;
+			margin-left:744px;
+		}
+		
+		/* blokje 1 verandert bij hover over buitenste */
+		div.holder:hover > div.blok1
+		{
+			border-radius:25px;
+		}
+		
+		/* blokje 2 verandert bij hover over buitenste */
+		div.holder:hover > div.blok2
+		{
+			border-radius:8px;
+		}
+		
+		/* blokje 1 transition-timing */
+		div.blok1
+		{
+			transition-timing-function: ease-out;
+		}
+		
+		/* blokje 2 transition-timing */
+		div.blok2
+		{
+			transition-timing-function: ease-in;
+		}
+		
+		/* blokje 3 transition-timing */
+		div.blok3
+		{
+			transition-timing-function: ease-in-out;
+		}
+		
+		/* blokje 4 transition-timing */
+		div.blok4
+		{
+			transition-timing-function: linear;
+		}
+		
+		/* blokje 5 transition-timing */
+		div.blok5
+		{
+			transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="holder">
+		<div class="blok1">1</div>
+		<div class="blok2">2</div>
+		<div class="blok3">3</div>
+		<div class="blok4">4</div>
+		<div class="blok5">5</div>
+	</div>
+</body>
+</html>
