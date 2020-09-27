@@ -1,0 +1,15 @@
+@import "color";
+
+button {
+    
+    height: 100px;
+    width: 100px;
+    border: black solid 10px;
+    background-color: $primary-color;
+    color: $button-color;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $button-color;
+    }
+}

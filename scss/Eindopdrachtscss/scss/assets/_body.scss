@@ -1,0 +1,15 @@
+$background-color: lightblue;
+$main-text-color: purple;
+
+body
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+
+	color:$main-text-color;
+
+	background-color: $background-color;
+	font-family: 'Lobster', cursive;
+}

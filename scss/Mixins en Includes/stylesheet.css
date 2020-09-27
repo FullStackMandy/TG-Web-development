@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.button {
+  width: 100px;
+  height: 50px;
+  border: green 3px solid;
+  background-color: brown;
+  ​color​: yellow;
+}
+
+.button:hover {
+  background-color: royalblue;
+  color: hotpink;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,27 @@
+
+
+.flexmenu {
+    display:flex
+}
+
+.flexmenu article
+{
+    margin-bottom:40px;
+}
+.flexmenu .sjef {
+    width: 30vw;
+    position:relative;
+}
+.flexmenu .sjef img {
+    width: 80%;
+    position:absolute;
+    left:10%;
+    bottom:0px;
+}
+.flexmenu .food
+{
+     width: 70vw;
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}

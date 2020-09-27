@@ -1,0 +1,158 @@
+@import "assets/body";
+@import "assets/navtop";
+@import "assets/footer"; 
+    
+h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+h3 span {
+    font-size: small;
+    float: right; 
+    font-weight: bold;
+}
+
+.top_container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/img/cooking.jpg');
+    background-size: cover;
+    background-position: center top;
+
+    .darken
+    {
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        background-color: rgba(0,0,0,0.6);
+    }
+}
+
+
+.title_blue {
+
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    color: royalblue;
+    font-family: 'Lobster', cursive;
+    font-size: x-large;
+    font-weight: bolder;
+
+    h2
+    {
+        margin:0;
+        text-align: left;
+    }
+}
+
+button {
+    background-color: rgb(78, 88, 97);
+    color: royalblue;
+    border-radius: 5px;
+    border-color: seashell solid 3px;
+    margin: 10px;
+    padding: 10px 40px 10px 40px;
+
+    &:hover {
+        color: rgb(112, 199, 12);
+    }
+}
+
+.header_midsection_black {
+    text-align: center;
+
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+article
+{
+    width:18vw;
+    font-size:14px;
+    @import "assets/testfontcolor"; 
+
+    h3,
+    p
+    {
+        text-align:left;
+        margin:0;
+        font-weight: bold;
+    }
+    h3
+    {
+        font-size:1.5em;
+        line-height: 1.5em;
+    }
+
+    &.title_blue
+    {
+        width:40vw;
+    }
+}
+
+
+.dish_img_text
+{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}
+
+.dish_img_text > article img {
+    height: 16vw;
+    width: 16vw;
+    border-radius: 8vw;
+}
+    
+
+.flexmenu {
+    display:flex;
+
+    article
+    {
+        margin-bottom:40px;
+    }
+
+    .sjef {
+        width: 30vw;
+        position:relative;
+    }
+    .sjef img {
+        width: 80%;
+        position:absolute;
+        left:10%;
+        bottom:0px;
+    }
+    .food
+    {
+        width: 70vw;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 800px) 
+{
+    
+    .footer > div,
+    .dish_img_text
+    {
+        flex-direction: column;
+    }
+    article
+    {
+        width:80%;
+        margin: 1em auto
+    }
+    .footer {
+        background-color: blueviolet;
+    }
+}

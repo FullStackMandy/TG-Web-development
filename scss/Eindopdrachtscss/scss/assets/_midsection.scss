@@ -1,0 +1,46 @@
+
+
+.header_midsection_black {
+    text-align: center;
+
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+article
+{
+    width:18vw;
+    font-size:14px;
+}
+article h3,
+ article p
+ {
+     text-align:left;
+     margin:0;
+     font-weight: bold;
+ }
+article h3
+{
+    font-size:1.5em;
+     line-height: 1.5em;
+}
+article.title_blue
+{
+    width:40vw;
+}
+
+   
+   .dish_img_text
+{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}
+
+.dish_img_text > article img {
+    height: 16vw;
+    width: 16vw;
+    border-radius: 8vw;
+}
+ 

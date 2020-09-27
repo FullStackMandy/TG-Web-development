@@ -1,0 +1,20 @@
+button {
+  height: 100px;
+  width: 100px;
+  border: black solid 10px;
+  background-color: #92adb9;
+  color: #f8a812;
+}
+
+button:hover {
+  background-color: #912525;
+  color: #f8a812;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border: black solid 10px;
+  background-color: blueviolet;
+}
+/*# sourceMappingURL=style.css.map */

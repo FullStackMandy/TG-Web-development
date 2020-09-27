@@ -1,0 +1,222 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: purple;
+  background-color: lightblue;
+  font-family: 'Lobster', cursive;
+}
+
+nav {
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+nav ul,
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: black;
+  padding: 10px 20px 10px 0;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: royalblue;
+}
+
+.footer {
+  background-color: #af7f7f;
+}
+
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  padding: 20px 0 40px 20vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #534d40;
+}
+
+.footer .contact {
+  width: 50%;
+}
+
+.footer .contact section {
+  width: 80%;
+  float: right;
+}
+
+.footer .contact section p {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+h3 span {
+  font-size: small;
+  float: right;
+  font-weight: bold;
+}
+
+.top_container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("/img/cooking.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.top_container .darken {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title_blue {
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  color: royalblue;
+  font-family: 'Lobster', cursive;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.title_blue h2 {
+  margin: 0;
+  text-align: left;
+}
+
+button {
+  background-color: #4e5861;
+  color: royalblue;
+  border-radius: 5px;
+  border-color: seashell solid 3px;
+  margin: 10px;
+  padding: 10px 40px 10px 40px;
+}
+
+button:hover {
+  color: #70c70c;
+}
+
+.header_midsection_black {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+article {
+  width: 18vw;
+  font-size: 14px;
+}
+
+article * {
+  color: green;
+}
+
+article h3,
+article p {
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+}
+
+article h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+article.title_blue {
+  width: 40vw;
+}
+
+.dish_img_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dish_img_text > article img {
+  height: 16vw;
+  width: 16vw;
+  border-radius: 8vw;
+}
+
+.flexmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexmenu article {
+  margin-bottom: 40px;
+}
+
+.flexmenu .sjef {
+  width: 30vw;
+  position: relative;
+}
+
+.flexmenu .sjef img {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 0px;
+}
+
+.flexmenu .food {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .footer > div,
+  .dish_img_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  article {
+    width: 80%;
+    margin: 1em auto;
+  }
+  .footer {
+    background-color: blueviolet;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
