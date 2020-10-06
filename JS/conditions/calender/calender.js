@@ -1,4 +1,6 @@
-function translateMonth(){ 
+//Opdracht 13, vertaal van getallen naar maanden. Als je het getal 1 invoerd, dan toont het scherm Januari//
+
+function translateMonth() {
     var input = document.getElementById('number').value;
     var months = [
         'January',
@@ -14,15 +16,16 @@ function translateMonth(){
         'November',
         'December'
     ];
-    document.getElementById('translationMonth').innerHTML = months[(input-1)];
-} 
+    document.getElementById('translationMonth').innerHTML = months[(input - 1)];
+}
+//Opdracht 14, maak bovenstaande Array opdracht nu met een Switch aan//
 
-function translateMonthSwitch(){ 
+function translateMonthSwitch() {
 
     var input = document.getElementById('number2').value;
     var output = 'Geef een nummer van een maand (1-12)';
 
-    switch( parseInt(input) ){
+    switch (parseInt(input)) {
         case 1:
             output = 'January';
             break;
@@ -63,4 +66,4 @@ function translateMonthSwitch(){
     }
 
     document.getElementById('translationMonth2').innerHTML = output;
-} 
+}
